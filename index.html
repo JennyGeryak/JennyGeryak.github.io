@@ -19,19 +19,31 @@
 			font-family:'palatino linotype'; 
 			font-size:20px; 
 		}
-		li a{
+		nav li a{
 			text-decoration: none;
 			padding: 0 10px;
 		} 
-		li{
+		nav li{
 			list-style: none;
 			display: inline-block;
 
 		}
-		ul{
+		nav ul{
 			padding:0;
 			text-align: right;
 			border-bottom: 1px solid #000;
+		}
+		#content .page-title {
+			font-family:'book antiqua'; 
+			font-weight: 700;
+			font-size:45px;
+			border-bottom: 2px solid #000;
+			box-shadow: 0 5px 0 #909090;
+		}
+		#content {
+			margin: 0 auto;
+			width: 960px;
+
 		}
 	</style>
 </head>
@@ -58,7 +70,7 @@
 		</nav>
 	</header>
 	<div id="content">
-		<div>
+		<div class="page-title">
 			Resume
 		</div>
 		<section id="information">
