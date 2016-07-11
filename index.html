@@ -3,6 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Jane's Geryak visit site</title>
+	<script src="https://use.fontawesome.com/f4ec012da1.js"></script>
 	<style>
 		#logo a{
 			font-family:'palatino linotype'; 
@@ -76,6 +77,7 @@
 		}
 		body{
 			font-family: 'palatino linotype'; 
+			margin: 0;
 		}
 		#information{
 			border-bottom: 1px solid #000;
@@ -90,8 +92,49 @@
 			width: 49%;
 			margin: 40px 0 24px 0;	
 		}
-	</style>
+		#instagram .title + .photo a{
+			display: inline-block;
+			width: 24%;
+		}
+		#instagram .title + .photo a img{
+			width: 100%;
+		}
+		#instagram{
+			margin: 40px 0 40px 0;
+		}
+		#instagram .photo {
+			margin: 20px 0;
+		}
+		footer .container{
+			width: 960px;
+			margin: auto;
+			color: #fff;
+		}
+
+		footer{   
+			background: #000;
+			padding: 40px;	
+		}
+
+		.container>div{
+			width: 33%;
+			display: inline-block;
+			vertical-align: top;
+		}
+		footer .title + div{
+			margin: 16px 0;
+		}
+		.social i{
+			font-size: 40px;
+			margin-right: 10px;
+		}
+	.resume .title + div a img{
+		border-radius: 50px;
+		width: 70%;
+	}
+	</style> 
 </head>
+
 <body>
 	<header>
 		<div id="logo">
@@ -160,59 +203,65 @@
 			</div>
 		</section>
 		<section id="instagram">
-			<a href=""><img src="img/img2.jpg" alt="jenny geryak"></a>
-			<a href=""><img src="img/img2.jpg" alt="jenny geryak"></a>
-			<a href=""><img src="img/img2.jpg" alt="jenny geryak"></a>
-			<a href=""><img src="img/img2.jpg" alt="jenny geryak"></a>
+			<div class="title">Follow me:</div>
+			<div class="photo">
+				<a href=""><img src="img/img2.jpg" alt="jenny geryak"></a>
+				<a href=""><img src="img/img2.jpg" alt="jenny geryak"></a>
+				<a href=""><img src="img/img2.jpg" alt="jenny geryak"></a>
+				<a href=""><img src="img/img2.jpg" alt="jenny geryak"></a>
+			</div>
 		</section>
 	</div>
 
 	<footer>
-		<div>
-			<div>
-				Contact
+		<div class="container">
+			
+			<div class="contact">
+				<div class="title">
+					Contact
+				</div>
+				<div>
+					Ukraine, Kyiv <br>
+					e-mail: janegeryak@gmail.com <br>
+					skype: Eugenua Geryak
+				</div>
 			</div>
-			<div>
-				Ukraine, Kyiv <br>
-				e-mail: janegeryak@gmail.com <br>
-				skype: Eugenua Geryak
+			<div class="social">
+				<div class="title">
+					Social
+				</div>
+				<div>
+					<a href="https://www.facebook.com/jane.geryak"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+					<a href="https://www.linkedin.com/in/jane-geryak-721719a5"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+					<a href="http://instagram.com/jenny_geryak"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+					<a href="https://github.com/JennyGeryak"><i class="fa fa-github-square" aria-hidden="true"></i></a>
+				</div>
 			</div>
+			<div class="resume">
+				<div class="title">
+					Resume
+				</div>
+				<div>
+					<a href=""><img src="img/img1.jpg" alt="jane geryak"></a>
+				</div>
+			</div>	
+			<nav>
+				<ul>
+					<li>
+						<a href="">home</a>
+					</li>
+					<li>
+						<a href="aboutme.html">about me</a>
+					</li>
+					<li>
+						<a href="blog.html">blog</a>
+					</li>
+					<li>
+						<a href="contact.html">contact</a>
+					</li>
+				</ul>
+			</nav>
 		</div>
-		<div>
-			<div>
-				Social
-			</div>
-			<div>
-				<a href="https://www.facebook.com/jane.geryak">facebook</a>
-				<a href="https://www.linkedin.com/in/jane-geryak-721719a5">linkedin</a>
-				<a href="http://instagram.com/jenny_geryak">instagram</a>
-				<a href="https://github.com/JennyGeryak">github</a>
-			</div>
-		</div>
-		<div>
-			<div>
-				Resume
-			</div>
-			<div>
-				<a href=""><img src="img/img1.jpg" alt="jane geryak"></a>
-			</div>
-		</div>	
-		<nav>
-			<ul>
-				<li>
-					<a href="">home</a>
-				</li>
-				<li>
-					<a href="aboutme.html">about me</a>
-				</li>
-				<li>
-					<a href="blog.html">blog</a>
-				</li>
-				<li>
-					<a href="contact.html">contact</a>
-				</li>
-			</ul>
-		</nav>
 	</footer>
 </body>
 </html>
