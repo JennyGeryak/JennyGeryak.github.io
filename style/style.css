@@ -1,11 +1,16 @@
+		body{
+			font-family: 'corbel'; 
+			font-size: 20px;
+			margin: 0;
+		}
 		#logo a{
 			font-family:'corbel'; 
 			font-size:36px;
 			text-decoration: none;
 		}
 		header{
-			width:960px;
-			margin:10px auto;
+			max-width:960px;
+			margin:20px auto 10px;
 			float:none;
 			clear:both;
 		}
@@ -26,6 +31,7 @@
 			padding:0;
 			text-align: right;
 			border-bottom: 1px solid #000;
+			margin-top: 0px;
 		}
 		#content .page-title {
 			font-family:'arial black'; 
@@ -37,9 +43,9 @@
 		}
 		#content {
 			margin: 0 auto;
-			width: 960px;
+			max-width: 960px;
 		}
-		 figure {
+		figure {
 			margin: 40px 40px 40px 0;
 			width: 300px;
 			height: 300px;
@@ -52,12 +58,14 @@
 		}
 		#education{
 			margin: 40px 0 12px;
-			width: 620px;
+			max-width: 620px;
+			width: 960px;
 			float: right;
 		}
 		#experience{
 			margin: 12px 0 24px;
-			width: 620px;
+			max-width: 620px;
+			width: 960px;
 			float: right;
 		}
 		.title{
@@ -76,10 +84,6 @@
 			border-left: 30px solid #000;
 			border-bottom: 36px solid #fff;
 		}
-		body{
-			font-family: 'corbel'; 
-			margin: 0;
-		}
 		#information{
 			border-bottom: 1px solid #000;
 			display: table; 
@@ -92,6 +96,7 @@
 			display: inline-block;
 			width: 49%;
 			margin: 40px 0 24px 0;	
+			vertical-align: top;
 		}
 		#instagram .title + .photo a{
 			display: inline-block;
@@ -107,7 +112,7 @@
 			margin: 20px 0;
 		}
 		footer .container{
-			width: 960px;
+			max-width: 960px;
 			margin: auto;
 			color: #fff;
 		}
@@ -163,6 +168,7 @@
     }
     footer nav ul {
     	text-align: left;
+    	margin-top: 20px;
     }
     header nav ul li:last-of-type a {
     	padding-right: 0;
@@ -178,7 +184,11 @@
     	top: 18px;
     	right: 0;
     }
-
-		footer .title:after{
+    footer .title:after{
 			border: 0;
 		}
+    span.small {
+    	font-size: 18px;
+      font-weight: 900;
+    }
+   
