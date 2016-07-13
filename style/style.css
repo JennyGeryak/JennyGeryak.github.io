@@ -191,4 +191,24 @@
     	font-size: 18px;
       font-weight: 900;
     }
-   
+
+    #column {
+			margin: 40px 0 12px;
+			max-width: 620px;
+			width: 960px;
+			float: right;
+    }
+    #column blockquote {
+    	background: #eee;
+    	padding: 16px;
+    	margin-right: 0;
+    	font-style: italic;
+    }
+    #column blockquote {
+    
+    }
+   #column blockquote span {
+   	display: block;
+   	text-align: right;
+   	font-weight: 600;
+   }
