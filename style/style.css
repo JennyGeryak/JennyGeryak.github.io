@@ -68,6 +68,14 @@
 			display: inline;
 			padding: 0 6px;
 		}
+		.title:after{
+			content:" ";
+			width: 0px;
+			height: 0px;
+			position: absolute;
+			border-left: 30px solid #000;
+			border-bottom: 36px solid #fff;
+		}
 		body{
 			font-family: 'corbel'; 
 			margin: 0;
@@ -170,3 +178,7 @@
     	top: 18px;
     	right: 0;
     }
+
+		footer .title:after{
+			border: 0;
+		}
