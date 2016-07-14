@@ -204,11 +204,27 @@
     	margin-right: 0;
     	font-style: italic;
     }
-    #column blockquote {
-    
+    #column blockquote span {
+   		display: block;
+   		text-align: right;
+   		font-weight: 600;
+   	}
+   	.clear {
+   		float:none;
+   		clear: both;
+   		display: table; 
+   	}
+   	#information #map iframe {
+   		width: 100%;
+   	}
+   	#information #map {
+   		margin-top: 0;
+   	}
+    #column p a {
+    	text-decoration: none;
+    	border-bottom: 1px dashed #eee;
     }
-   #column blockquote span {
-   	display: block;
-   	text-align: right;
-   	font-weight: 600;
-   }
+    #column p:first-of-type a {
+    	font-weight: 900;
+    }
+
