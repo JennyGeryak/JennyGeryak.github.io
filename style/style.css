@@ -238,3 +238,75 @@
     	height: 100%;
     }
 
+    @media screen and (max-width: 435px) {
+    	#education{
+				max-width: auto;
+				width: auto;
+				float: none;
+			}
+			#experience{
+				max-width: auto;
+				width: auto;
+				float: none;
+			}
+			#information{
+				display: block;
+				padding: 0 20px;
+			}
+			header {
+				text-align: center;
+				margin-bottom: 0;
+			}
+			nav ul {
+				text-align: center;
+				margin-bottom: 0;
+			}
+			.page-title {
+				text-align: center;
+			}
+			#information figure {
+				margin-top: 0;
+				margin-left: auto;
+				margin-right: auto;
+				width: 100%;
+			}
+			#abilities {
+				padding: 0 20px;
+			}
+			#skills, #competences {
+				width: 100%;
+				display: block;
+			}
+			#instagram {
+				padding: 0 20px;
+			}
+			#instagram .title + .photo a {
+				display: block;
+				width: 100%;
+			}
+			.container>div {
+				width: 100%
+			}
+			footer nav div{
+				position: static;
+			}
+
+			footer {
+				padding: 40px 0;
+				text-align: center;
+			}
+			footer nav ul {
+				text-align: center;
+			}
+			.aboutme #information figure, .contact #information figure {
+				margin-top: 40px;
+				margin-bottom: 0;
+				width: 100%;
+			}
+			#column {
+				width: 100%;
+				margin-top: 0;
+			}
+
+    }
+
