@@ -238,18 +238,57 @@
     	height: 100%;
     }
 
+    @media screen and (max-width: 1000px) {
+      header, #content {
+      	padding: 0 20px;
+      }
+			#information {
+				display: block;
+			}
+      #education, #experience, .aboutme #column, .contact #column {
+      	margin: 40px 0 12px 340px;
+      	max-width: 100%;
+      	width: auto;
+      	float: none;
+      }
+      figure{
+      	margin: 0 40px 40px 0; 
+      }
+      footer .container > div {
+      	width: 49%;
+      }
+    }
+    @media screen and (max-width: 560px) {
+      #education, #experience, .aboutme #column, .contact #column {
+      	margin: 0;
+      	max-width: 100%;
+      	width: auto;
+      	float: none;
+      }
+      figure{
+      	margin: 40px 0;
+      	float: none;
+      }
+      footer .container>div{
+      	width: 100%;
+      }
+      footer nav div{
+				position: static;
+				text-align: right;
+      }
+    }
     @media screen and (max-width: 435px) {
     	#education{
 				max-width: auto;
 				width: auto;
 				float: none;
 			}
-			#experience{
+			#experience {
 				max-width: auto;
 				width: auto;
 				float: none;
 			}
-			#information{
+			#information {
 				display: block;
 				padding: 0 20px;
 			}
@@ -287,8 +326,9 @@
 			.container>div {
 				width: 100%
 			}
-			footer nav div{
+			footer nav div {
 				position: static;
+				text-align: center;
 			}
 
 			footer {
@@ -307,6 +347,5 @@
 				width: 100%;
 				margin-top: 0;
 			}
-
     }
 
