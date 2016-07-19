@@ -143,11 +143,11 @@
 <script>
 	// 'e7574b0aaeef493591d99cfbfb369309'
 	// '3164787923.1677ed0.dd996307f4f0431fb86167ad5db6b5e3'
-	var url = 'http://cors.io/?u=https://api.instagram.com/v1/users/self/?access_token=3164787923.1677ed0.dd996307f4f0431fb86167ad5db6b5e3/';
+	var url = 'https://api.instagram.com/v1/users/self/?access_token=3164787923.1677ed0.dd996307f4f0431fb86167ad5db6b5e3/';
 	var getJSON = function(url, callback) {
     var xhr = new XMLHttpRequest();
     xhr.open("get", url, true);
-  	xhr.withCredentials = false;
+  	xhr.setRequestHeader("Accept", "application/vnd.github.3.raw");
     xhr.responseType = "json";
     xhr.onload = function() {
       var status = xhr.status;
