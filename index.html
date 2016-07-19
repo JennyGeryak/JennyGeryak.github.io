@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<base href="https://jennygeryak.github.io/">
+	<base href="https://jennygeryak.github.io">
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Jane's Geryak visit site</title>
 	<script src="https://use.fontawesome.com/f4ec012da1.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	<link rel="stylesheet" href="style/style.css">
+
 </head>
 
 <body>
@@ -141,28 +143,58 @@
 <script>
 	// 'e7574b0aaeef493591d99cfbfb369309'
 	// '3164787923.1677ed0.dd996307f4f0431fb86167ad5db6b5e3'
-	var url = 'https://api.instagram.com/v1/users/self/?access_token='+'3164787923.1677ed0.dd996307f4f0431fb86167ad5db6b5e3';
-	var getJSON = function(url, callback) {
-    var xhr = new XMLHttpRequest();
-    xhr.open("get", url, true);
-    xhr.responseType = "json";
-    xhr.onload = function() {
-      var status = xhr.status;
-      if (status == 200) {
-        callback(null, xhr.response);
-      } else {
-        callback(status);
-      }
-    };
-    xhr.send();
-	};
+	var url = 'https://api.instagram.com/v1/users/self/?access_token=3164787923.1677ed0.dd996307f4f0431fb86167ad5db6b5e3/';
+	// var getJSON = function(url, callback) {
+ //    var xhr = new XMLHttpRequest();
+ //    xhr.open("get", url, true);
+ //    xhr.responseType = "json";
+ //    xhr.onload = function() {
+ //      var status = xhr.status;
+ //      if (status == 200) {
+ //        callback(null, xhr.response);
+ //      } else {
+ //        callback(status);
+ //      }
+ //    };
+ //    xhr.send();
+	// };
 
-	var result = getJSON(url, 
-		function(err, data) {
-		  if (err != null) {
-		    alert("Something went wrong: " + err);
-		  } else {
-		    alert("Your query count: " + data.query.count);
-		  }
-		});
+	// var result = getJSON(url, 
+	// 	function(err, data) {
+	// 	  if (err != null) {
+	// 	    alert("Something went wrong: " + err);
+	// 	  } else {
+	// 	    alert("Your query count: " + data.query.count);
+	// 	  }
+	// 	});
+var createCORSRequest = function(method, url) {
+  var xhr = new XMLHttpRequest();
+  if ("withCredentials" in xhr) {
+    // Most browsers.
+    xhr.open(method, url, true);
+  } else if (typeof XDomainRequest != "undefined") {
+    // IE8 & IE9
+    xhr = new XDomainRequest();
+    xhr.open(method, url);
+  } else {
+    // CORS not supported.
+    xhr = null;
+  }
+  return xhr;
+};
+
+// var url = '';
+var method = 'GET';
+var xhr = createCORSRequest(method, url);
+
+xhr.onload = function() {
+  // Success code goes here.
+  console.log(nice);
+};
+
+xhr.onerror = function() {
+  // Error code goes here.
+};
+
+xhr.send();
 </script>
