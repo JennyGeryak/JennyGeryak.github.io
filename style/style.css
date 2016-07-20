@@ -101,6 +101,7 @@
 		#instagram .title + .photo a{
 			display: inline-block;
 			width: 24%;
+			margin: 0 1% 0 0;
 		}
 		#instagram .title + .photo a img{
 			width: 100%;
