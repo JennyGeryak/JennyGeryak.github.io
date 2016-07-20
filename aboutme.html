@@ -46,10 +46,6 @@
 		<section id="instagram">
 			<div class="title">Follow me:</div>
 			<div class="photo">
-				<a href=""><img src="img/img2.jpg" alt="jenny geryak"></a>
-				<a href=""><img src="img/img2.jpg" alt="jenny geryak"></a>
-				<a href=""><img src="img/img2.jpg" alt="jenny geryak"></a>
-				<a href=""><img src="img/img2.jpg" alt="jenny geryak"></a>
 			</div>
 		</section>
 	</div>
@@ -107,3 +103,61 @@
 	</footer>
 </body>
 </html>
+<script>
+
+var catche;
+// Using YQL and JSONP
+$.ajax({
+    url: "https://api.instagram.com/v1/users/self/media/recent/?access_token=3164787923.1677ed0.dd996307f4f0431fb86167ad5db6b5e3",
+ 
+    // The name of the callback parameter, as specified by the YQL service
+    jsonp: "callback",
+ 
+    // Tell jQuery we're expecting JSONP
+    dataType: "jsonp",
+ 
+    // Tell YQL what we want and that we want JSON
+    // data: {
+    //     q: "select title,abstract,url from search.news where query=\"cat\"",
+    //     format: "json"
+    // },
+ 
+    // Work with the response
+    success: function( response ) {
+        instagram(response);
+    }
+});
+
+function instagram(response)
+{
+	var images = response.data;
+	console.log(images)
+
+	var parent = document.getElementById('instagram');
+
+	var container = parent.getElementsByClassName('photo')[0];
+
+
+	for (var i = 0; i < 4; i++) 
+	{
+		var anchor = document.createElement('a');
+
+		var image = document.createElement('img');
+
+		anchor.href = images[i].link;
+
+		image.src = images[i].images.standard_resolution.url;
+
+		image.alt = images[i].caption.text;
+
+		anchor.appendChild(image);
+
+		container.appendChild(anchor);
+	};
+
+	console.log(container)
+
+}
+
+
+</script>
