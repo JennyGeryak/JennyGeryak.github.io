@@ -34,7 +34,7 @@
 			margin-top: 0px;
 		}
 		#content .page-title {
-			font-family:'arial black'; 
+			font-family:'arial black',sans-serif; 
 			font-weight: 700;
 			font-size:60px;
 			border-bottom: 2px solid #000;
@@ -69,7 +69,7 @@
 			float: right;
 		}
 		.title{
-			font-family: 'arial black';
+			font-family: 'arial black',sans-serif;
 			font-size: 25px;
 			background: #000;
 			color: #fff;
