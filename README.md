@@ -12,6 +12,9 @@
 * Instagram API
 * Google Map
 
+*Site was tested by:*
+* Selenium WebDriver
+
 [Follow this link](https://jennygeryak.github.io/)
 
 Preview: ![Alt Text](https://github.com/JennyGeryak/JennyGeryak.github.io/blob/master/img/screen/eueedqr0ol4.jpg)
