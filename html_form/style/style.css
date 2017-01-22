@@ -1,0 +1,226 @@
+body{
+	background: url(../img/pattern.jpg);
+	background-size: 15%;
+	color: #fff;
+}
+section {
+	width: 300px; 
+	padding: 50px; 
+	margin: auto;
+}
+form {
+	border: 1px solid #fff;
+	padding: 10px;
+	background: rgba(255,255,255,0.1);
+	border:#35a5e5 2px solid;
+	box-shadow: 0 0 10px rgba(81, 203, 238, 1) inset;
+	border-radius: 5px;
+}
+div {
+	box-shadow: 0 0 10px rgba(81, 203, 238, 1);
+	border-radius: 5px;
+}
+div.shadow {
+	position: relative;
+}
+div.shadow:after {
+	content: "";
+	display: block;
+	width: 120%;
+	height: 50px;
+	background: #444;
+	background: radial-gradient(rgba(0,0,0,0.5) 5%, transparent 60%);
+	position: absolute; 
+	left: -10%;
+	border-radius: 50%;
+}
+h1 {
+	margin: 10px;
+	text-shadow: 0 1px 0 #000;
+}
+input,select,textarea {
+	background: rgba(0,0,0,0.4);
+	font-size: 10px;
+	font-style: italic;
+	color:#fff;
+}
+fieldset{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+.hobby input{
+	width: 10px;
+}
+.hobby label{
+	display: inline-block;
+	width: calc(100% - 22px);
+}
+.birthday legend, .sex legend{
+	display: inline;
+	margin: 0px 5px 0px 0px;
+}
+.birthday select {
+	color: #fff;
+	border-radius: 5px;
+	padding: 7px;
+}
+.sex label {
+	display: inline-block;
+	cursor: pointer;
+	position: relative;
+	padding-left: 15px;
+	margin-right: 15px;
+	font-size: 13px;
+}
+input[type='radio'] {
+	display: none;
+}
+.sex label:before {
+	content: "";
+	display: inline-block;
+	width: 12px;
+	height: 12px;
+	margin-right: 10px;
+	position: absolute;
+	left: 0;
+	bottom: 1px;
+	background-color: #fff;
+	box-shadow: 0 0 10px rgba(81, 203, 238, 0);
+	border-radius: 8px;
+}
+input[type='radio']:checked + label:before {
+	content: "\2022";
+	color: #f3f3f3;
+	font-size: 30px;
+	text-align: center;
+	line-height: 18px;
+	box-shadow: 0 0 10px rgba(81, 203, 238, 1);
+}
+
+input[type='text']{
+	width: 100%;
+	padding: 10px 10px 10px 30px;
+	box-sizing: border-box;
+	border-radius: 5px;
+	border: 0px;
+	border-top: 1px solid #000;
+	border-bottom: 1px solid #777;
+	margin: 5px 0px;
+}
+input[type='email']{
+	width: 100%;
+	padding: 10px 10px 10px 30px;
+	box-sizing: border-box;
+	border-radius: 5px;
+	border: 0px;
+	border-top: 1px solid #000;
+	border-bottom: 1px solid #777;
+}	
+input[type='tel']{
+	width: 100%;
+	padding: 10px 10px 10px 30px;
+	box-sizing: border-box;
+	border-radius: 5px;
+	border: 0px;
+	border-top: 1px solid #000;
+	border-bottom: 1px solid #777;
+	margin: 5px 0px; 
+}
+.hobby label {
+	display: inline-block;
+	cursor: pointer;
+	position: relative;
+	padding-left: 15px;
+	margin-right: 15px;
+	font-size: 13px;
+}
+input[type='checkbox'] {
+	display: none;
+}
+.hobby label:before {
+	content: "";
+	display: inline-block;
+	width: 12px;
+	height: 12px;
+	margin-right: 10px;
+	position: absolute;
+	left: 0;
+	bottom: 1px;
+	background-color: #fff;
+	box-shadow: 0 0 10px rgba(81, 203, 238, 0);
+	border-radius: 3px;
+}
+input[type=checkbox]:checked + label:before {
+	content: "\2022";
+	color: #f3f3f3;
+	font-size: 30px;
+	text-align: center;
+	line-height: 18px;
+	box-shadow: 0 0 10px rgba(81, 203, 238, 1);
+}
+textarea{
+	width: 100%;
+	padding: 10px 10px 10px 30px;
+	box-sizing: border-box;
+	border-radius: 5px;
+	border: 0px;
+	border-top: 1px solid #000;
+	border-bottom: 1px solid #777;
+	margin: 5px 0px;
+}
+input[type='submit'] {
+	border-radius: 5px;
+	border:#FF0000 1px solid;
+	box-shadow: 0 0 5px rgba(255, 0, 0, 1) inset;
+	text-transform: uppercase;
+	color: #fff;
+	text-shadow: 0 0 10px rgba(255, 0, 0, 1) ;
+	padding: 10px;
+	display: inline-block;
+}
+.submit {
+	border:#FF0000 1px solid;
+	box-shadow: 0 0 5px rgba(255, 0, 0, 1);
+	border-radius: 5px;
+	display: inline-block;
+}
+.sex {
+	margin: 5px 0px;
+}
+.go-down{
+	position: absolute;
+	margin-top: 10px;
+	margin-left: 10px;
+	text-shadow: 0 0 10px rgba(81, 203, 238, 1);
+}
+.fa.fa-phone.go-down {
+	margin-top: 15px;
+}
+.fa.fa-child.go-down {
+	margin-top: 13px;
+}
+.fa.fa-commenting.go-down {
+	margin-top: 15px;
+}
+.fa {
+	display: block;
+}
+input[required="required"]{
+	background: rgba(0,0,0,0.4) url(../img/asterisk.png) calc(100% - 2px) 2px no-repeat;
+}
+.required {
+	display: inline-block;
+	box-shadow: none;
+	background: url(../img/asterisk.png) calc(100% + 2px) 2px no-repeat;
+	padding: 0px 10px 0px 0px;
+}
+.formfooter {
+	text-align: justify;
+	box-shadow: none;
+}
+.formfooter:after {
+	content: "";
+	width: 100%;
+	display: inline-block;
+}
