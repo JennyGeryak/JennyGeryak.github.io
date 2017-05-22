@@ -17,6 +17,6 @@
 
 [Follow this link](https://jennygeryak.github.io/)
 
-Preview: ![Alt Text](https://github.com/JennyGeryak/JennyGeryak.github.io/blob/master/img/screen/eueedqr0ol4.jpg)
+Preview: ![alt text](https://github.com/JennyGeryak/JennyGeryak.github.io/blob/master/img/screen/eueedqr0ol4.jpg)
 
 
